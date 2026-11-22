@@ -1,0 +1,7 @@
+{
+  "uuid": "gnome-carousel-overlay@local",
+  "name": "GNOME Carousel Overlay Hook",
+  "description": "Makes gnome-carousel float as a borderless hover overlay without appearing in the dock or Overview",
+  "shell-version": ["49", "50", "51"],
+  "version": 1
+}

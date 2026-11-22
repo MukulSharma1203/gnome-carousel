@@ -1,0 +1,17 @@
+[package]
+name = "gnome-carousel"
+version = "0.3.0"
+edition = "2021"
+description = "Instant slanted parallelogram wallpaper carousel for GNOME"
+license = "MIT"
+
+[dependencies]
+gtk4 = { version = "0.9", features = ["v4_12"] }
+image = { version = "0.25", default-features = false, features = ["jpeg", "png", "webp"] }
+rayon = "1.10"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
